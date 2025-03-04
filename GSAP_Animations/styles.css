@@ -1,0 +1,51 @@
+/* General Styling */
+body {
+    background: linear-gradient(45deg, #1a1a2e, #16213e);
+    color: white;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Meme Image */
+#memeImage {
+    width: 400px;
+    position: absolute;
+    opacity: 0;
+    transform: scale(0);
+    border: 8px solid hotpink;
+    box-shadow: 0 0 15px hotpink;
+    border-radius: 20px;
+}
+
+/* Moving Image (Bouncing DVD Logo Effect) */
+#movingImage {
+    width: 250px; /* BIGGER IMAGE */
+    position: absolute;
+    opacity: 0; /* Hidden until click */
+    top: 50px;
+    left: 50px;
+}
+
+/* Strike a Pose Button */
+button {
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    background: hotpink;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background: #ff69b4;
+    transform: scale(1.1);
+}
